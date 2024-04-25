@@ -10,7 +10,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       country: response.data.country,
-      temperature: response.data.temperature,
+      temperature: response.data.temperature.current,
       date: "Friday 13:00",
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
@@ -46,7 +46,7 @@ export default function Weather(props) {
         </h1>
         <ul>
           <li>{weatherData.time}</li>
-          <li>{weatherData.description}</li>
+          <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-3">
           <div className="col-6">
@@ -56,7 +56,9 @@ export default function Weather(props) {
                 alt={weatherData.description}
                 className="float-left"
               />
-              <span className="temperature">{weatherData.temperature}</span>
+              <span className="temperature">
+                {Math.round(weatherData.temperature)}
+              </span>
               <span className="unit">°C</span>
             </div>
           </div>
