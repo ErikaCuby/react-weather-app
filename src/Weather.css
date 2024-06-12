@@ -56,3 +56,29 @@
   top: -14px;
   margin-left: 5px;
 }
+
+@media(max-width: 500px) {
+  .Weather {
+  padding: 12px;
+}
+
+.Weather h1 {
+  font-size: 20px;
+}
+
+.Weather li {
+  font-size: 14px;
+}
+
+.Weather .temperature {
+  font-size: 44px;
+  line-height: 44px;
+  top: 15px;
+}
+
+.Weather .unit {
+  font-size: 14px;
+  top: -8px;
+}
+
+}

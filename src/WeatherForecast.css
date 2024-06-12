@@ -7,3 +7,13 @@
   opacity: 0.6;
   margin-left: 5px;
 }
+
+@media(max-width: 500px) {
+  .WeatherForecast-day {
+    font-size: 14px;
+  }
+  .WeatherForecast-temperatures {
+    font-size: 13px;
+  }
+
+}
