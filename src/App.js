@@ -9,7 +9,12 @@ export default function App() {
       </div>
       <footer>
         Coded by{" "}
-        <a href="https://github.com/ErikaCuby" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.erikakubickova.com/"
+          target="_blank"
+          rel="noreferrer"
+          title="Erika Kubíčková | Portfolio"
+        >
           Erika Cuby
         </a>{" "}
         and it is open-sourced on{" "}
@@ -17,6 +22,7 @@ export default function App() {
           href="https://github.com/ErikaCuby/react-weather-app"
           target="_blank"
           rel="noreferrer"
+          title="Erika Kubíčková | GitHub"
         >
           GitHub
         </a>
